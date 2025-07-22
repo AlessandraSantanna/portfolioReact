@@ -10,7 +10,7 @@ import { BsGithub } from "react-icons/bs";
 const ProjectCard = ({image,title,url,github})=> (
     <div className="p-4 md:w-1/3 mb-6">
       
-        <div className="rounded-lg h-52 overflow-hidden">
+        <div className="rounded-lg  overflow-hidden flex justify-center  bg-white">
     {url ? (
         <a href={url} target="_blank" rel="noopener noreferrer">
             <img src={image} alt="content" className="object-center h-full w-full"/>
@@ -38,8 +38,8 @@ const ProjectCard = ({image,title,url,github})=> (
 
 export default function Projects() {
   const projects = [
-  {title: 'Site  Bolo', image:Frontend,url:"https://docesabor.vercel.app/", github: "https://github.com/AlessandraSantanna/page"},
-  {title: 'Site comerce', image:Frontend_1, url:"https://lilinda-salgados.netlify.app",github: "https://github.com/DeyvissonRobert/lilinda-salgados"},
+  {title: ' Bolos', image:Frontend,url:"https://docesabor.vercel.app/", github: "https://github.com/AlessandraSantanna/page"},
+  {title: 'Loja de Salgados', image:Frontend_1, url:"https://lilinda-salgados.netlify.app",github: "https://github.com/DeyvissonRobert/lilinda-salgados"},
   {title: 'Site Tarot', image:Frontend_3 , url:"https://tarotinsightsheer.vercel.app/", github: "https://github.com/AlessandraSantanna/TarotInsightSher"},
   
   ];
@@ -53,17 +53,19 @@ export default function Projects() {
               Ao longo da minha trajetória como desenvolvedora, venho construindo projetos que combinam estética, 
               funcionalidade e foco na experiência do usuário. Meu portfólio inclui desde sites institucionais responsivos 
               até aplicações web interativas, com destaque para organização de código,
-              uso de boas práticas e atenção aos detalhes visuais.          </p>
+              uso de boas práticas e atenção aos detalhes visuais. 
+            </p>
               
-              <a
-                href="https://linktree-alessandra.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <a
+             href="https://linktree-alessandra.vercel.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="mt-6 block"
+            >
               
 
               <button type='button' data-aos="fade-up" data-aos-delay='300' className="text-pink-900 bg-white
-               hover:bg-pink-300 focus:outline-none focus:ring-4 focus:ring-pink-300 font-semibold rounded-full text-xs sm:text-sm px-4 py-2 text-center">
+             hover:bg-pink-300 focus:outline-none focus:ring-4 focus:ring-pink-300 font-semibold rounded-full text-xs sm:text-sm px-4 py-2 text-center">
               Linktree
               </button>
               </a>
@@ -72,7 +74,7 @@ export default function Projects() {
       <div data-aos='fade-up' data-aos-delay='400' className="flex flex-wrap sm:m-4  -mx-4 -mb-10 -mt-4">
         {
           projects.map ((project, index)=>(
-            <ProjectCard key={index} {...project}/>
+          <ProjectCard key={index} {...project}/>
           ) )
         }
       </div>

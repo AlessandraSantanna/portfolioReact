@@ -11,7 +11,7 @@ export default function Hero() {
       <div data-aos='fade-up' className="flex-1 md:text-left mt-10 md:mt-0">
        {/* <h1 className="text-3xl sm:text-4xl md:text-2xl font-bold text-white">Welcome to My Portfolio</h1> */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Alessandra Santana</h1>
-        <p data-aos='ffade-up'data-aos-delay='300' className="text-base sm:text-lg md:text-lg text-white mb-6">Sou um desenvolvedor apaixonado com talento para criar aplicativos web.</p>
+        <p data-aos='ffade-up'data-aos-delay='300' className="text-base sm:text-lg md:text-lg text-white mb-6">Sou uma desenvolvedora apaixonado com talento para criar aplicativos web.</p>
      
        <button type='button' className='text-gray-900 mt-4 bg-white hover:bg-pink-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center' >
             Contact
