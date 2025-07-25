@@ -3,10 +3,10 @@
 :root {
   /* Colours */
   --color-text: #831843;
-  --color-primary: #576cbc;
+  --color-primary: #b54170;
   --color-secondary: #831843;
   --color-dark: #831843;
-  --color-bg: ##831843;
+  --color-bg: #831843;
 
   /* Fonts */
   --font-inter: "Inter", sans-serif;

@@ -46,7 +46,7 @@ export default function Skills() {
                 type="button"
                 className="text-white bg-pink-900 hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-pink-700 font-semibold rounded-full text-xs sm:text-sm px-4 py-2 text-center"
               >
-                Download CV
+                Dowload Currículo
               </button>
             </a>
           </div>

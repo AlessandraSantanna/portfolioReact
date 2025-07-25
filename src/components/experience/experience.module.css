@@ -48,6 +48,10 @@
   width: 120px;
   height: 120px;
 }
+.skill:hover .skillImageContainer {
+  background-color: var(--color-primary);
+  transition: background-color 0.3s ease;
+}
 
 .skillImageContainer img {
   width: 75px;
