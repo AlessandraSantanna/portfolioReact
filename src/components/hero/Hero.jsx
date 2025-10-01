@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
       <div data-aos='fade-up' className="flex-1 flex justify-center md:justify-end mt-0 md:mt-0">
 
-         <img src={Alessandra} alt="Hero" className="h-[300px] sm:h-[400px] md:h-[380px] w-[280px] sm:w-[360px] object-contain rounded-lg" />
+         <img src={Alessandra} alt="Hero" className="h-[300px] sm:h-[400px] md:h-[390px] w-[280px] sm:w-[860px] object-contain rounded-lg" />
          
       </div>
     </section>

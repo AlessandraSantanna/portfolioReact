@@ -2,12 +2,15 @@ import React from "react";
 import Frontend from "../../assets/bolo.png"
 import Frontend_1 from "../../assets/salgados.jpeg"
 import Frontend_3 from "../../assets/tarot insight.jpg"
+import frontend_2 from "../../assets/ia.jpg"
+import Frontend_4 from "../../assets/geradorCV.png"
+import Frontend_5 from "../../assets/blog.png"
 import { BsGithub } from "react-icons/bs";
 
 
 
 
-const ProjectCard = ({image,title,url,github})=> (
+const ProjectCard = ({image,title,url,github,description})=> (
     <div className="p-4 md:w-1/3 mb-6">
       
         <div className="rounded-lg  overflow-hidden flex justify-center  bg-white">
@@ -33,16 +36,22 @@ const ProjectCard = ({image,title,url,github})=> (
             </a>
             GitHub
         </a>
+
+        <p className="leading-relaxed text-base text-gray-300 mt-2">{description}</p>
     </div>
 )
 
 export default function Projects() {
   const projects = [
-  {title: ' Bolos', image:Frontend,url:"https://docesabor.vercel.app/", github: "https://github.com/AlessandraSantanna/page"},
-  {title: 'Loja de Salgados', image:Frontend_1, url:"https://lilinda-salgados.netlify.app",github: "https://github.com/DeyvissonRobert/lilinda-salgados"},
-  {title: 'Site Tarot', image:Frontend_3 , url:"https://tarotinsightsheer.vercel.app/", github: "https://github.com/AlessandraSantanna/TarotInsightSher"},
-  
-  ];
+  {title: ' Bolos' , description: 'Tecnologias: React, Vite, Tailwind', image:Frontend,url:"https://docesabor.vercel.app/", github: "https://github.com/AlessandraSantanna/page"},
+  {title: 'Loja de Salgados', description: 'Tecnologias: React, Vite, Tailwind', image:Frontend_1, url:"https://lilinda-salgados.netlify.app",github: "https://github.com/DeyvissonRobert/lilinda-salgados"},
+  {title: 'Site Tarot', description: 'Tecnologias: HTML,CSS e JavaScript', image:Frontend_3 , url:"https://tarotinsightsheer.vercel.app/", github: "https://github.com/AlessandraSantanna/TarotInsightSher"},
+  {title: 'ToDoList', description: 'Tecnologias: HTML,CSS e JavaScript', image:frontend_2 , url:"https://18bitsapi.netlify.app/", github: "https://github.com/AlessandraSantanna/ToDoList"},
+  {title: 'Gerador de Currículo', description: 'Tecnologias: React, TypeScript e Next.js', image:Frontend_4 , url:"https://cv-maker-preview.vercel.app/", github: "https://github.com/AlessandraSantanna/cv-maker-koru.git"},
+  {title: 'Blog Pessoal', description: 'Tecnologias: React, TypeScript e Next.js', image:Frontend_5 , url:"https://blogale-three.vercel.app/", github: "https://github.com/AlessandraSantanna/blogale.git"},
+
+]
+  ;
   return (
    <section id="projects" className="text-gray-200 bg-pink-900 body-font" >
     <div className="container px-3 py-11 mx-auto">
